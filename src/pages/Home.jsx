@@ -1,5 +1,6 @@
 import React from "react";
 import Enquiry from "../components/Enquiry";
+import { Link } from "react-router-dom";
 
 function Home() {
     return (
@@ -12,17 +13,23 @@ function Home() {
                             <h1 className="display-5 fw-light">Strength & beauty from the earth</h1>
                             <p className="lead fs-6">Family‑owned quarries in Mathata, Udaipur. Supplying premium granite, marble, sandstone and limestone blocks since 1995.</p>
                             <div className="d-flex gap-3 mt-4">
-                                
-                                <a href="/products" className="btn btn-outline-secondary rounded-0 px-4">Explore products</a>
+                                <Link
+                                    to="/products"
+                                    className="btn btn-outline-secondary rounded-0 px-4"
+                                >
+                                    Explore products
+                                </Link>
+
+                                {/* <a href="/products" className="btn btn-outline-secondary rounded-0 px-4">Explore products</a> */}
                                 <a href="#contact" className="btn btn-link text-decoration-none ps-0">Contact us →</a>
                             </div>
                         </div>
                         <div className="col-lg-6">
-                            <img 
-                                src="https://images.unsplash.com/photo-1622645636770-11fbf0611463?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bWluZXxlbnwwfHwwfHx8MA%3D%3D" 
-                                className="img-fluid h-100 w-100" 
-                                style={{ objectFit: "cover", minHeight: "350px" }} 
-                                alt="Quarry overview" 
+                            <img
+                                src="https://images.unsplash.com/photo-1622645636770-11fbf0611463?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bWluZXxlbnwwfHwwfHx8MA%3D%3D"
+                                className="img-fluid h-100 w-100"
+                                style={{ objectFit: "cover", minHeight: "350px" }}
+                                alt="Quarry overview"
                             />
                         </div>
                     </div>
@@ -35,11 +42,11 @@ function Home() {
                     <div className="row g-4">
                         <div className="col-md-4">
                             <div className="card h-100 bg-white border-0 shadow-sm">
-                                <img 
-                                    src="https://plus.unsplash.com/premium_photo-1682146837754-e378f62e686e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                                    className="card-img-top" 
-                                    style={{ height: "220px", objectFit: "cover" }} 
-                                    alt="Imperial Gold Granite" 
+                                <img
+                                    src="https://plus.unsplash.com/premium_photo-1682146837754-e378f62e686e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    className="card-img-top"
+                                    style={{ height: "220px", objectFit: "cover" }}
+                                    alt="Imperial Gold Granite"
                                 />
                                 <div className="card-body">
                                     <span className="badge bg-secondary text-white mb-2">Granite</span>
@@ -50,11 +57,11 @@ function Home() {
                         </div>
                         <div className="col-md-4">
                             <div className="card h-100 bg-white border-0 shadow-sm">
-                                <img 
-                                    src="https://media.istockphoto.com/id/1295684969/photo/construction-vehicles-working-in-marble-quarry-with-oversized-marble-blocks.webp?a=1&b=1&s=612x612&w=0&k=20&c=k_coEMAYnAlxg9X1kGufZVz2YRwbAekbt4UUEspCFas=" 
-                                    className="card-img-top" 
-                                    style={{ height: "220px", objectFit: "cover" }} 
-                                    alt="Kotda Marble" 
+                                <img
+                                    src="https://media.istockphoto.com/id/1295684969/photo/construction-vehicles-working-in-marble-quarry-with-oversized-marble-blocks.webp?a=1&b=1&s=612x612&w=0&k=20&c=k_coEMAYnAlxg9X1kGufZVz2YRwbAekbt4UUEspCFas="
+                                    className="card-img-top"
+                                    style={{ height: "220px", objectFit: "cover" }}
+                                    alt="Kotda Marble"
                                 />
                                 <div className="card-body">
                                     <span className="badge bg-secondary text-white mb-2">Marble</span>
@@ -65,11 +72,11 @@ function Home() {
                         </div>
                         <div className="col-md-4">
                             <div className="card h-100 bg-white border-0 shadow-sm">
-                                <img 
-                                    src="mine3.jpeg" 
-                                    className="card-img-top" 
-                                    style={{ height: "220px", objectFit: "cover" }} 
-                                    alt="Rainbow Sandstone" 
+                                <img
+                                    src="mine3.jpeg"
+                                    className="card-img-top"
+                                    style={{ height: "220px", objectFit: "cover" }}
+                                    alt="Rainbow Sandstone"
                                 />
                                 <div className="card-body">
                                     <span className="badge bg-secondary text-white mb-2">Sandstone</span>
@@ -119,17 +126,17 @@ function Home() {
                             <a href="about.html" className="btn btn-link text-decoration-none ps-0 mt-2">More about our mines →</a>
                         </div>
                         <div className="col-lg-6 order-lg-1">
-                            <img 
-                                src="https://images.unsplash.com/photo-1583415855738-5a4b23b4f2b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
-                                className="img-fluid h-100 w-100" 
-                                style={{ objectFit: "cover", minHeight: "300px" }} 
-                                alt="Mathata quarry landscape" 
+                            <img
+                                src="https://images.unsplash.com/photo-1583415855738-5a4b23b4f2b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                className="img-fluid h-100 w-100"
+                                style={{ objectFit: "cover", minHeight: "300px" }}
+                                alt="Mathata quarry landscape"
                             />
                         </div>
                     </div>
                 </div>
 
-                <Enquiry/>
+                <Enquiry />
             </main>
         </>
     );

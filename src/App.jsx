@@ -9,6 +9,8 @@ import Blogs from "./pages/Blogs";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
+import NotFound from "./pages/Notfound";
+
 
 function App() {
   return (
@@ -22,6 +24,9 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
+
+         {/* 404 Route - This catches all undefined routes */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />
