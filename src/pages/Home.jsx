@@ -1,5 +1,5 @@
 import React from "react";
-import Enquiry from "../components/enquiry";
+import Enquiry from "../components/Enquiry";
 
 function Home() {
     return (
